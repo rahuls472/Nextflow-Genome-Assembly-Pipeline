@@ -1,0 +1,83 @@
+# ==========================
+# Nextflow
+# ==========================
+.nextflow*
+work/
+results/
+.cache/
+data/
+
+# Nextflow reports
+*.html
+*.trace
+*.timeline
+*.report
+
+# ==========================
+# Logs
+# ==========================
+*.log
+
+# ==========================
+# Conda
+# ==========================
+.conda/
+conda/
+
+# ==========================
+# Python
+# ==========================
+__pycache__/
+*.pyc
+*.pyo
+
+# ==========================
+# IDEs
+# ==========================
+.vscode/
+.idea/
+*.swp
+
+# ==========================
+# Operating System
+# ==========================
+.DS_Store
+Thumbs.db
+
+# ==========================
+# Bioinformatics outputs
+# ==========================
+*.bam
+*.bai
+*.sam
+*.vcf
+*.vcf.gz
+*.bcf
+*.csi
+
+*.fai
+*.dict
+
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+
+*.html
+*.json
+
+# SPAdes
+*_spades/
+
+# QUAST
+*_quast/
+
+# BUSCO
+*_busco/
+
+# ==========================
+# Temporary files
+# ==========================
+tmp/
+temp/
+*.tmp
