@@ -3,7 +3,7 @@ process SPADES {
     cpus 4
 
     container "biocontainers/spades:v3.13.0dfsg2-2-deb_cv1"
-    publishDir "results/spades_results", mode: "copy"
+    publishDir "${params.output}/spades_results", mode: "copy"
 
     input:
     tuple val(sample_id), path(r1), path(r2)

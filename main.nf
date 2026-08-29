@@ -3,13 +3,14 @@ include {FASTP} from "./modules/fastp_trim.nf"
 include {SPADES} from "./modules/spades_assembly.nf"
 include {QUAST} from "./modules/quast.nf"
 include {BUSCO} from "./modules/busco.nf"
-
-
+params.output = "results"
+params.busco_lineage = null
 
 
 workflow {
 
-    reads_ch = Channel.fromFilePairs(params.raw_reads)
+    reads_ch = Channel.fromFilePairs(params.input)
+    
 
     FASTQC(reads_ch)
 

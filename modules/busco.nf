@@ -5,7 +5,7 @@ process BUSCO {
 
     container "staphb/busco:latest"
 
-    publishDir "results/busco_results", mode: "copy"
+    publishDir "${params.output}/busco_results", mode: "copy"
 
     input:
     tuple val(sample_id), path(contigs)

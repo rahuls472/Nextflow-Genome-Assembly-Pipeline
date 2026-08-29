@@ -4,7 +4,7 @@ process QUAST {
 
     container "staphb/quast:latest"
 
-    publishDir "results/quast_results", mode: "copy"
+    publishDir "${params.output}/quast_results", mode: "copy"
 
     input:
     tuple val(sample_id), path(contigs)
